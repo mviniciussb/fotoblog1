@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    background-color: #c9c9c9;
+
+    overflow-x: hidden;
+
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 465px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #293241;
+    
+}
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para o lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox-content {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container p{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin-left: 20px;
+
+    text-align: justify;
+
+    font-size: 1.2em;
+    margin-bottom: 50px;
+
+    color: #293241;
+
+    
+}
+
+section {
+    margin: auto;
+    max-width: 1020px;
+
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
+    background-color: #e8e8e8;
+    border-radius: 35px;
+}
+
+section div img{
+    border-radius: 35px;
+}
+
+footer{
+  width: 100vw;
+  background-color: #293241;;
+
+    padding: 1px;
+   margin-top: 50px;
+
+   text-align: center;
+   font-size: 1.2em;
+}
+
+a{
+  color: #FFF;
+  text-decoration: none;
+  
+}
+
+nav {
+    max-width: 1000px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px auto 30px;
+
+    color: #FFF;
+    font-size: 1.5em;
+
+    padding-right: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+ul {
+    
+    list-style: none;
+    display: flex;
+    gap: 48px;}
+
+nav a img{
+  max-width: 350px;
+}
